@@ -8,9 +8,9 @@ const eqArrays = function(arr1, arr2) {
     }
   }
   if (count === arr1.length) {
-    console.log(true);
+    return true;
   } else {
-    console.log(false);
+    return false;
   }
 };
 
