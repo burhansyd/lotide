@@ -3,11 +3,11 @@ const letterPositions = function(string) {
   for (let letter of string) {
     posLetter[letter] = [];
   }
-  for (let letter of string) {
-    posLetter[letter].push(string.indexOf(letter));
+  for (let i = 0; i < string.length; i++) {
+    posLetter[string[i]].push(i);
   }
   delete posLetter[" "];
   return posLetter;
 };
 
-console.log(letterPositions("hello my"));
+console.log(letterPositions("my name is"));
