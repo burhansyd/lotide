@@ -1,7 +1,15 @@
 const tail = require('../tail.js');
-const assertEqual = require('../assertEqual.js');
+const assert = require('chai').assert;
 
 const result = tail(["Hello", "Lighthouse", "Labs"]);
-console.log(assertEqual(result.length, 2)); // ensure we get back two elements
-console.log(assertEqual(result[0], "Lighthouse")); // ensure first element is "Lighthouse"
-console.log(assertEqual(result[1], "Labs"));
+describe("tail", () => {
+  it("should return 2 for ['Hello', 'Lighthouse', 'Labs'] length", () => {
+    assert.strictEqual(result.length, 2);
+  });
+  it("should return 'Lighthouse' for ['Hello', 'Lighthouse', 'Labs'] length", () => {
+    assert.strictEqual(result[0], "Lighthouse");
+  });
+  it("should return 'Labs' for ['Hello', 'Lighthouse', 'Labs'] length", () => {
+    assert.strictEqual(result[1], "Labs");
+  });
+});
