@@ -29,3 +29,5 @@ const without = function(source, itemsToRemove) {
   }
   return [...new Set(newArr)];
 };
+
+module.exports = without;

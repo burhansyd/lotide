@@ -11,3 +11,5 @@ const letterPositions = function(string) {
 };
 
 console.log(letterPositions("my name is"));
+
+module.exports = letterPositions;

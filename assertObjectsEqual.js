@@ -30,3 +30,5 @@ const assertObjectsEqual = function(object1, object2) {
     console.log(String.fromCodePoint(0x1F923) + ` Assertion failed: ${inspect(object1)} !== ${inspect(object2)}`);
   }
 };
+
+module.exports = assertObjectsEqual;

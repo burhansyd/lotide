@@ -26,3 +26,5 @@ const map = function(array, callback) {
   }
   return results;
 };
+
+module.exports = map;
